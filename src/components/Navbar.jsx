@@ -2,14 +2,10 @@ import React, { useEffect, useState } from "react";
 import { assets } from "../assets/assets";
 
 const Navbar = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(true);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   useEffect(() => {
-    if (showMobileMenu) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow = showMobileMenu ? "hidden" : "auto";
     return () => {
       document.body.style.overflow = "auto";
     };
