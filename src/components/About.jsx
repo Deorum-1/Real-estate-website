@@ -16,7 +16,7 @@ const About = () => {
       <p className="text-gray-500 max-w-80 text-center mb-8">
         Passionate About Properties, Dedicated to Your Vision
       </p>
-      <div className="flex flex-col md:flex-row md:items-start md:gap-20">
+      <div className="flex flex-col md:flex-row md:items-center md:gap-20">
         <img
           src={assets.brand_img}
           alt=""
